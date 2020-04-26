@@ -1,14 +1,46 @@
-export default{
-    
+export default {
     container: {
-        backgroundColor: 'white',
-        flex: 1,
+        paddingTop: 0,
+//       justifyContent: 'flex-end'
+//        marginLeft: 0 
+    },
+    header:{
+        backgroundColor: '#008b8b',
+        height: 110
+        //flex: 1
     },
 
+    mb:{
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop:20,
+    },
+    image:{
+        width: 100,
+        height: 100,
+        resizeMode: 'stretch',
+        },
+
+    spin:{
+        backgroundColor:'#232C33',
+        width: 180,
+        height: 180,
+        
+    },
+    text:{
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTo0p:50,
+    },    
     bgContainer: {
         borderBottomWidth: 0.5,
         borderBottomColor: '#A0A0A0'
     },
+    
 
     userContainer: {
         alignItems: 'center',
@@ -22,8 +54,8 @@ export default{
         borderRadius: 35
     },
     userImagen2: {
-        width: 100,
-        height: 70,
+        width: 200,
+        height: 80,
         borderRadius: 0,
        
     },
@@ -124,5 +156,12 @@ export default{
         top: 0,
         right: 0,
         bottom: 0
+    },
+    butonTem:{
+        width: 130,
+        height: 100,
+        //position: 'absolute',
+        left: 15,
+        bottom: 1
     }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { ImageBackground,View,Image,ViewStatusBar, StyleSheet } from 'react-native';
+import { ImageBackground,View } from 'react-native';
 import {Tabs, Tab,TabHeading,ScrollableTab,Segment, Button,Container, Header, Title, Left, Right,  Body, Content,Text, Card, CardItem, Subtitle } from "native-base";
 import Icon from 'react-native-vector-icons/Entypo'
 import styles from './style';  

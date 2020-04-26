@@ -7,14 +7,13 @@ import HomeScreen from './HomeScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import s from './style'
 import {  Icon } from 'react-native-elements';
-import { createStackNavigator } from '@react-navigation/stack';
 
 import About from '../About/index'
 import Setting from '../SettingsS/index'
 
 function Menu(props){
   return(
-    <View style ={s.container}>
+    <View style ={s.containerdraw}>
       <View style ={s.bgContainer}>
         
           <View style={s.userContainer}>
@@ -24,7 +23,7 @@ function Menu(props){
             <Text style={s.userTitulo}>Climate Monitoring</Text>
           </View>
 
-      </View>
+      </View >
       <DrawerItemList {...props}/>
     </View>
   )
@@ -71,25 +70,6 @@ function MyDrawer() {
   );
 }
 
-const Tab = createBottomTabNavigator();
-function MyTab() {
-    return (
-    <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomeScreen} />
-    </Tab.Navigator>
-    );
-  }
-
-  const Stack = createStackNavigator();
-function Slide(){
-  return(      
-    <Stack.Navigator initialRouteName="Login">
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Home" component={Home} />
-  </Stack.Navigator>
-);  
-}
- 
 
 export default class TypographyExample extends Component {
   render() {

@@ -35,10 +35,16 @@ export default {
         justifyContent: 'center',
         alignItems: 'center',
         marginTo0p:50,
-    },    
+    },   
+    
+    containerdraw:{
+        backgroundColor:'#DADFF7'
+
+    },
     bgContainer: {
         borderBottomWidth: 0.5,
-        borderBottomColor: '#A0A0A0'
+        borderBottomColor: '#A0A0A0',
+        backgroundColor:'#DADFF7'
     },
     
 

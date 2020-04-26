@@ -10,7 +10,7 @@ export default class TabTwo extends Component {
     }
   render() {
     return (
-      <Content padder >
+      <Content padder style={{backgroundColor: '#232C33'}}>
 
           <View style={styles.mb}>
             <View>

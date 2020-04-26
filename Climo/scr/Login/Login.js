@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import{View,Image} from 'react-native'
 import {
   Container,
   Header,
@@ -15,7 +16,7 @@ import {
   Form,
   Text
 } from "native-base";
-import styles from "./styles";
+import s from "./styles";
 
 class FloatingLabel extends Component {
     constructor(props){
@@ -23,29 +24,38 @@ class FloatingLabel extends Component {
     }
   render() {
     return (
-        <Container>
-        <Header>
+        <Container style={s.container}>
+        <Header style={s.header}>
+            <Left/>
           <Body>
-            <Title>LOGIN</Title>
+            <Title style={{color:'#FFF'}}>LOGIN</Title>
           </Body>
           <Right />
         </Header>
 
         <Content>
+            <View style ={s.bgContainer}>        
+                <View style={s.userContainer}>
+                <Image style={s.userImagen2} source ={require('../../assets/LOGOFINAL.png')}/>            
+                </View>
+                <View style ={s.userNombre}>
+                <Text style={s.userTitulo}>Climate Monitoring</Text>
+                </View>
+            </View>   
           <Form>
             <Item floatingLabel>
-              <Label>Username</Label>
+              <Label style={{color:'#000'}} >Username</Label>
               <Input />
             </Item>
-            <Item floatingLabel last>
-              <Label>Password</Label>
+            <Item floatingLabel last >
+              <Label style={{color:'#000'}}>Password</Label>
               <Input secureTextEntry />
             </Item>
           </Form>
-          <Button block style={{ margin: 15, marginTop: 50 }}
+          <Button block style={s.button}
             onPress={()=> this.props.navigation.navigate("Home")}
           >
-            <Text>Sign In</Text>
+            <Text style={{color:'#FFF', fontSize:18}}>Sign In</Text>
           </Button>
         </Content>
       </Container>

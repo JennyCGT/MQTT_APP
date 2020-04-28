@@ -6,7 +6,7 @@ export default {
     },
     header:{
         backgroundColor: '#008b8b',
-        height: 110
+        //height: 110
         //flex: 1
     },
 
@@ -84,15 +84,6 @@ export default {
         justifyContent: 'center',
         alignItems: 'center'
     },
-
-    camaraIcon: {
-        width: 20,
-        height: 20,
-        position: 'absolute',
-        left: 15,
-        bottom: 3
-    },
-
     userNombre: {
         marginVertical: 10,
     },
@@ -152,22 +143,5 @@ export default {
     tituloTxt: {
         fontSize: 13
     },
-    difuminado:{
-        flex:1,
-        backgroundColor:'rgba(0, 0, 0, 0.5)'
-    },
-    fondoImagen:{
-        position: 'absolute',
-        left: 0,
-        top: 0,
-        right: 0,
-        bottom: 0
-    },
-    butonTem:{
-        width: 130,
-        height: 100,
-        //position: 'absolute',
-        left: 15,
-        bottom: 1
-    }
+ 
 }

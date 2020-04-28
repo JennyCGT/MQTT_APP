@@ -34,8 +34,8 @@ function MyDrawer() {
   return (
     <Drawer.Navigator drawerContent={(props)=> <Menu {...props}/>}
         drawerContentOptions={{
-        activeTintColor: '#e91e63',
-        itemStyle: { marginVertical: 30 },
+        activeTintColor: '#232C33',
+        itemStyle: { marginVertical: 10 },
       }}
            screenOptions={({ route }) => ({
         drawerIcon: ({ focused, color, size }) => {
@@ -58,7 +58,7 @@ function MyDrawer() {
           return <Icon  name= {iconName}
           type='entypo'
           size={20}
-          color={color} />;
+          color={'#232C33'} />;
         },
       })}
     >

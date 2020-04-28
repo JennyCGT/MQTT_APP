@@ -25,7 +25,7 @@ export default class HomeScreen extends React.Component {
                 transparent
                 onPress={() => this.props.navigation.openDrawer()}
                 >
-                <Icon name="menu" />
+                <Icon name="menu" size={25} />
                 </Button>
             </Left>
             <Body>

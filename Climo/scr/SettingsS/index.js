@@ -10,30 +10,34 @@ import {
   Body,
   Text
 } from "native-base";
+import {Icon} from "react-native-elements"
+import style from'./style'
 
-class Header1 extends Component {
+class Setting extends Component {
     constructor(props){
         super(props);
     }
   render() {
     return (
       <Container>
-        <Header>
-          <Left />
+        <Header style={style.header}>
+          <Left>
+            <Button transparent onPress={() => this.props.navigation.goBack()}>
+              <Icon name ="arrow-back"/>
+            </Button> 
+          </Left>
           <Body>
-            <Title>Header</Title>
+            <Title>SETTINGS</Title>
           </Body>
           <Right />
         </Header>
 
         <Content padder>
-          <Button onPress={() => this.props.navigation.goBack()}>
-            <Text>Back</Text>
-          </Button>
+            
         </Content>
       </Container>
     );
   }
 }
 
-export default Header1;
+export default Setting;

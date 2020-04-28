@@ -12,11 +12,12 @@ import {
   Body,
   Left,
   Right,
-  Icon,
   Form,
   Text
 } from "native-base";
 import s from "./styles";
+import {  Icon } from 'react-native-elements';
+
 
 class FloatingLabel extends Component {
     constructor(props){
@@ -43,13 +44,20 @@ class FloatingLabel extends Component {
                 </View>
             </View>   
           <Form>
-            <Item floatingLabel>
-              <Label style={{color:'#000'}} >Username</Label>
+            <Item fixedLabel>
+              <Icon name="cloud" type="entypo" size={17}></Icon>
+              <Label style={{color:'#000'}} >   Broker</Label>
+              <Input placeholde="Icon Alignment in Textbox"/>
+            </Item>
+            <Item >
+              <Icon name="user" type="entypo" size={17}></Icon>
+              <Label style={{color:'#000'}} >   User</Label>
               <Input />
             </Item>
-            <Item floatingLabel last >
-              <Label style={{color:'#000'}}>Password</Label>
-              <Input secureTextEntry />
+            <Item >
+              <Icon name="key" type="entypo" size={17}></Icon>
+              <Label style={{color:'#000'}} >   Password</Label>
+              <Input />
             </Item>
           </Form>
           <Button block style={s.button}
